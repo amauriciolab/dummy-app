@@ -1,0 +1,15 @@
+name: Node.js CI workflow
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+   ci:
+    name: Deployment
+    uses: amauriciolab/github-actions-templates/.github/workflows/gha.workflows.build-node.yml@main
+
+
+ 
